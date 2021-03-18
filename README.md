@@ -1,6 +1,8 @@
 # PDF-splitter
 
-![](images/anim-splitter.gif)
+<p align="center">
+  <img src="https://github.com/ManishGotame/ALevel-PDF-splitter/blob/main/images/anim-splitter.gif" alt="animation"/>
+</p>
 
 PDF-splitter is a parsing library built for extracting questions from Exam Papers. 
 It works on both questions papers and marking schemes.

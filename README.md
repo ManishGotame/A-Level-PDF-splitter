@@ -7,7 +7,7 @@ It works on both questions papers and marking schemes.
 
 Currently works with Python 3.7
 
-__To report a bug__ or request a feature, please [file an issue](https://github.com/jsvine/pdfplumber/issues/new/choose). __To ask a question__ or request assistance with a specific PDF, please [use the discussions forum](https://github.com/jsvine/pdfplumber/discussions).
+__To report a bug__ or request a feature, please [file an issue](https://github.com/ManishGotame/PDF-splitter/issues/new/choose).
 
 
 ## Supported Exam Boards

@@ -69,23 +69,41 @@ Properties :
 
 ```python
 from pdfsplitter.mscheme import mparser
-paperData = qparser("9709_s10_ms_11.pdf", {}).parse()
+paperData = mparser("9709_s10_ms_11.pdf", {}).parse()
 
 print(paperData)
 ```
 
+##
+# To Extract questions and answers as separate PDFs
 
+`Note` : This is still very messy. I will improve this in the future.
+
+Using both qparser and mparser for the example.
+
+Arguments:
+- Location of the file
+- `paperData`
+- empty / previous `dict` file
+- filename without its extension
+
+```python
+from pdfsplitter.qpaper import qparser
+from pdfsplitter.mscheme import mparser
+
+from pdfsplittter.utils.extractor import extract
+
+paperData, questionsText = qparser("9709_s10_qp_11.pdf").parse()
+paperData = qparser("9709_s10_ms_11.pdf", {}).parse()
+
+paperDict = extract("9709_s10_qp_11.pdf", paperData, {}, "9709_s10_qp_11")
+paperDict = extract("9709_s10_ms_11.pdf", paperData, paperDict, "9709_s10_ms_11")
+
+print(paperDict)
+```
 
 ##
 `paperDict` :
-
-```sh
-{
-  '1': {'questions': '9709_s10_qp_11-1', 'answers': '', 'prediction': ''}, 
-  '2': {'questions': '9709_s10_qp_11-2', 'answers': '', 'prediction': ''}, 
-  '3': {'questions': '9709_s10_qp_11-3', 'answers': '', 'prediction': ''}
-}
-```
 
 ```sh
 {'1': {'questions': '9709_s10_qp_11-1', 'answers': '9709_s10_ms_11-1', 'prediction': ''}, 
@@ -93,11 +111,8 @@ print(paperData)
 '3': {'questions': '9709_s10_qp_11-3', 'answers': '9709_s10_ms_11-3', 'prediction': ''}}
 ```
 
-```sh
-{'1': {'questions': '', 'answers': '9709_s10_ms_11-1', 'prediction': ''}, 
-'2': {'questions': '', 'answers': '9709_s10_ms_11-2', 'prediction': ''}, 
-'3': {'questions': '', 'answers': '9709_s10_ms_11-3', 'prediction': ''}}
-```
+Note: `prediction` is used to store machine learning predctions of topics which is not included in this repository.
+
 
 
 

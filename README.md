@@ -1,6 +1,6 @@
 # PDF-splitter
 
-[The animation of question being splitted]
+![](images/anim-splitter.gif)
 
 PDF-splitter is a parsing library built for extracting questions from Exam Papers. 
 It works on both questions papers and marking schemes.

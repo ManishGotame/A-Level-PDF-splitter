@@ -27,6 +27,8 @@ jsonFile, textData = qparser("9709_s10_qp_11.pdf").parse()
 print(jsonFile)
 ```
 
+## Understanding Output
+
 `textData` :
 ```sh
 {'text': '1', 'x0': 0.0, 'x1': 595.0, 'top': Decimal('65.932'), 'bottom': Decimal('170.733'), 'upright': True, 'direction': 1, 'fontname': 'HVQXXC+Times-Bold', 'page_number': 2, 'more': []}
@@ -35,13 +37,21 @@ print(jsonFile)
 
 {'text': '3', 'x0': 0.0, 'x1': 595.0, 'top': Decimal('262.973'), 'bottom': Decimal('374.733'), 'upright': True, 'direction': 1, 'fontname': 'HVQXXC+Times-Bold', 'page_number': 2, 'more': []}
 ```
-
+| Property | Description |
+|----------|-------------|
+| `text` | Detected Question Number. |
+| `x0` | Distance of left-side extremity from left side of question |
+| `top` | Distance of top of line from top of question |
+| `bottom` | Distance of bottom of the line from top of question. |
+| `page_number` | Page number on which this question was found. |
+| `more` | Contains the same properties for other remaining portions of the question |
+ 
 `jsonFile` :
 
 ```sh
 {'1': {'questions': '9709_s10_qp_11-1', 'answers': '', 'prediction': ''}, 
 '2': {'questions': '9709_s10_qp_11-2', 'answers': '', 'prediction': ''}, 
-'3': {'questions': '9709_s10_qp_11-3', 'answers': '', 'prediction': ''}
+'3': {'questions': '9709_s10_qp_11-3', 'answers': '', 'prediction': ''}}
 ```
 
 ### To split a marking scheme

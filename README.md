@@ -63,8 +63,6 @@ Properties :
 
 ##
 # To split a marking scheme
-  - This was designed to use the `dict` from qparser.
-  - You can send an empty `dict` to get around that.
   - It does not return `questionsText` like qparser.
 
 ```python

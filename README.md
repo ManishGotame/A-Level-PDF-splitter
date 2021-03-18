@@ -24,8 +24,8 @@ print(jsonFile)
 
 ```python
 from pdfsplitter.mscheme import mparser
-
-jsonFile = qparser("9709_s10_ms_11.pdf", {}).parse()
+jsonFile = {}
+jsonFile = qparser("9709_s10_ms_11.pdf", jsonFile).parse()
 
 print(jsonFile)
 ```

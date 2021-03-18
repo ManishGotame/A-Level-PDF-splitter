@@ -1,3 +1,3 @@
-# ALevel-PDF-splitter
+# A Level-PDF-splitter
 
-I am supposed to upload my work on A level question paper parsing tool here
+A Level-PDF-splitter is a parsing library designed to split Past Papers according to their question numbers.

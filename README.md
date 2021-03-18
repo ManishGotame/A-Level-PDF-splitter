@@ -34,7 +34,7 @@ print(paperDict)
 
 ```python
 from pdfsplitter.mscheme import mparser
-paperData  = qparser("9709_s10_ms_11.pdf", {}).parse()
+paperData = qparser("9709_s10_ms_11.pdf", {}).parse()
 
 print(paperData)
 ```
@@ -63,9 +63,11 @@ Properties:
 `paperDict` :
 
 ```sh
-{'1': {'questions': '9709_s10_qp_11-1', 'answers': '', 'prediction': ''}, 
-'2': {'questions': '9709_s10_qp_11-2', 'answers': '', 'prediction': ''}, 
-'3': {'questions': '9709_s10_qp_11-3', 'answers': '', 'prediction': ''}}
+{
+  '1': {'questions': '9709_s10_qp_11-1', 'answers': '', 'prediction': ''}, 
+  '2': {'questions': '9709_s10_qp_11-2', 'answers': '', 'prediction': ''}, 
+  '3': {'questions': '9709_s10_qp_11-3', 'answers': '', 'prediction': ''}
+}
 ```
 
 ```sh

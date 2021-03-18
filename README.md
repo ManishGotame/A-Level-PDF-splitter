@@ -1,10 +1,9 @@
 # PDF-splitter
-
 <p align="center">
   <img src="https://github.com/ManishGotame/ALevel-PDF-splitter/blob/main/images/anim-splitter.gif" alt="animation"/>
 </p>
 
-### PDF-splitter is a parsing library built for extracting questions from Exam Papers. 
+### A parsing library built for extracting questions from Exam Papers. 
 ### It works on both questions papers and marking schemes.
 
 Currently works with Python 3.6 or higher.
@@ -15,7 +14,6 @@ __To report a bug__ or request a feature, please [file an issue](https://github.
 ## Supported Exam Boards
 - [Cambridge Assessment International Examinations](https://www.cambridgeinternational.org/)
 
-## 
 
 ## Examples
 

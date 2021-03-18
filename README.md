@@ -18,7 +18,9 @@ jsonFile, textData = qparser("9709_s10_qp_11.pdf").parse()
 print(jsonFile)
 ```
 
-- To split a marking scheme
+### To split a marking scheme
+  - This was designed to merge the JsonFile from qparser.
+  - You can send an empty jsonFile to get around that.
 
 ```python
 from pdfsplitter.mscheme import mparser

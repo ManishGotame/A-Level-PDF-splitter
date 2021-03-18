@@ -27,6 +27,18 @@ paperDict, textData = qparser("9709_s10_qp_11.pdf").parse()
 print(paperDict)
 ```
 
+##
+### To split a marking scheme
+  - This was designed to use the `dict` from qparser.
+  - You can send an empty `dict` to get around that.
+
+```python
+from pdfsplitter.mscheme import mparser
+paperData  = qparser("9709_s10_ms_11.pdf", {}).parse()
+
+print(paperData)
+```
+
 ## Understanding Output
 
 `textData` :
@@ -56,16 +68,6 @@ Properties:
 '3': {'questions': '9709_s10_qp_11-3', 'answers': '', 'prediction': ''}}
 ```
 
-### To split a marking scheme
-  - This was designed to use the `dict` from qparser.
-  - You can send an empty `dict` to get around that.
-
-```python
-from pdfsplitter.mscheme import mparser
-paperData  = qparser("9709_s10_ms_11.pdf", {}).parse()
-
-print(paperData)
-```
 ```sh
 {'1': {'questions': '9709_s10_qp_11-1', 'answers': '9709_s10_ms_11-1', 'prediction': ''}, 
 '2': {'questions': '9709_s10_qp_11-2', 'answers': '9709_s10_ms_11-2', 'prediction': ''}, 
@@ -77,9 +79,6 @@ print(paperData)
 '2': {'questions': '', 'answers': '9709_s10_ms_11-2', 'prediction': ''}, 
 '3': {'questions': '', 'answers': '9709_s10_ms_11-3', 'prediction': ''}}
 ```
-
-
-
 
 
 

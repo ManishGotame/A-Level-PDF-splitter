@@ -6,13 +6,24 @@ It works on both questions papers and marking schemes.
 ## Supported Exam Boards
 - [Cambridge Assessment International Examinations](https://www.cambridgeinternational.org/)
 
-## Basic Example
-- To split a question paper
+## Examples
+
+### To split a question paper
 
 ```python
-from pdfsplitter.qpaper import qpaper
+from pdfsplitter.qpaper import qparser
 
 jsonFile, textData = qparser("9709_s10_qp_11.pdf").parse()
+
+print(jsonFile)
+```
+
+- To split a marking scheme
+
+```python
+from pdfsplitter.mscheme import mparser
+
+jsonFile = qparser("9709_s10_ms_11.pdf", {}).parse()
 
 print(jsonFile)
 ```

@@ -17,7 +17,7 @@ __To report a bug__ or request a feature, please [file an issue](https://github.
 
 ## Examples
 
-### To split a question paper
+# To split a question paper 
 
 ```python
 from pdfsplitter.qpaper import qparser
@@ -45,7 +45,7 @@ Properties :
 | `top` | Distance of top of line from top of question. |
 | `bottom` | Distance of bottom of the line from top of question. |
 | `page_number` | Page number on which this question was found. |
-| `more` | Contains the same properties for other remaining portions of the question |
+| `more` | Contains the same properties given above for other remaining portions of the question |
 
 ##
 
@@ -62,9 +62,10 @@ Properties :
 
 
 ##
-### To split a marking scheme
+# To split a marking scheme
   - This was designed to use the `dict` from qparser.
   - You can send an empty `dict` to get around that.
+  - It does not return `questionsText` like qparser.
 
 ```python
 from pdfsplitter.mscheme import mparser

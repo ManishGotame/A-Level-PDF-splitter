@@ -22,9 +22,9 @@ __To report a bug__ or request a feature, please [file an issue](https://github.
 ```python
 from pdfsplitter.qpaper import qparser
 
-jsonFile, textData = qparser("9709_s10_qp_11.pdf").parse()
+paperDict, textData = qparser("9709_s10_qp_11.pdf").parse()
 
-print(jsonFile)
+print(paperDict)
 ```
 
 ## Understanding Output
@@ -37,16 +37,18 @@ print(jsonFile)
 
 {'text': '3', 'x0': 0.0, 'x1': 595.0, 'top': Decimal('262.973'), 'bottom': Decimal('374.733'), 'upright': True, 'direction': 1, 'fontname': 'HVQXXC+Times-Bold', 'page_number': 2, 'more': []}
 ```
+
+Properties:
 | Property | Description |
 |----------|-------------|
-| `text` | Detected Question Number. |
-| `x0` | Distance of left-side extremity from left side of question |
-| `top` | Distance of top of line from top of question |
+| `text` | Detected Question. |
+| `x0` | Distance of left-side extremity from left side of question. |
+| `top` | Distance of top of line from top of question. |
 | `bottom` | Distance of bottom of the line from top of question. |
 | `page_number` | Page number on which this question was found. |
 | `more` | Contains the same properties for other remaining portions of the question |
  
-`jsonFile` :
+`paperDict` :
 
 ```sh
 {'1': {'questions': '9709_s10_qp_11-1', 'answers': '', 'prediction': ''}, 
@@ -55,15 +57,25 @@ print(jsonFile)
 ```
 
 ### To split a marking scheme
-  - This is designed to merge the JsonFile from qparser.
-  - You can send an empty jsonFile to get around that.
+  - This was designed to use the `dict` from qparser.
+  - You can send an empty `dict` to get around that.
 
 ```python
 from pdfsplitter.mscheme import mparser
-jsonFile = {}
-jsonFile = qparser("9709_s10_ms_11.pdf", jsonFile).parse()
+paperData  = qparser("9709_s10_ms_11.pdf", {}).parse()
 
-print(jsonFile)
+print(paperData)
+```
+```sh
+{'1': {'questions': '9709_s10_qp_11-1', 'answers': '9709_s10_ms_11-1', 'prediction': ''}, 
+'2': {'questions': '9709_s10_qp_11-2', 'answers': '9709_s10_ms_11-2', 'prediction': ''}, 
+'3': {'questions': '9709_s10_qp_11-3', 'answers': '9709_s10_ms_11-3', 'prediction': ''}}
+```
+
+```sh
+{'1': {'questions': '', 'answers': '9709_s10_ms_11-1', 'prediction': ''}, 
+'2': {'questions': '', 'answers': '9709_s10_ms_11-2', 'prediction': ''}, 
+'3': {'questions': '', 'answers': '9709_s10_ms_11-3', 'prediction': ''}}
 ```
 
 

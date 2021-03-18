@@ -6,6 +6,13 @@ It works on both questions papers and marking schemes.
 ## Supported Exam Boards
 - [Cambridge Assessment International Examinations](https://www.cambridgeinternational.org/)
 
+Currently works with Python 3.7
+
+__To report a bug__ or request a feature, please [file an issue](https://github.com/jsvine/pdfplumber/issues/new/choose). __To ask a question__ or request assistance with a specific PDF, please [use the discussions forum](https://github.com/jsvine/pdfplumber/discussions).
+
+
+## How it works
+
 ## Examples
 
 ### To split a question paper
@@ -19,7 +26,7 @@ print(jsonFile)
 ```
 
 ### To split a marking scheme
-  - This was designed to merge the JsonFile from qparser.
+  - This is designed to merge the JsonFile from qparser.
   - You can send an empty jsonFile to get around that.
 
 ```python

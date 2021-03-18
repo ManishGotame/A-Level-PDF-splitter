@@ -1,17 +1,19 @@
 # PDF-splitter
 
+[The animation of question being splitted]
+
 PDF-splitter is a parsing library built for extracting questions from Exam Papers. 
 It works on both questions papers and marking schemes.
-
-## Supported Exam Boards
-- [Cambridge Assessment International Examinations](https://www.cambridgeinternational.org/)
 
 Currently works with Python 3.7
 
 __To report a bug__ or request a feature, please [file an issue](https://github.com/jsvine/pdfplumber/issues/new/choose). __To ask a question__ or request assistance with a specific PDF, please [use the discussions forum](https://github.com/jsvine/pdfplumber/discussions).
 
 
-## How it works
+## Supported Exam Boards
+- [Cambridge Assessment International Examinations](https://www.cambridgeinternational.org/)
+
+## 
 
 ## Examples
 

@@ -1,3 +1,9 @@
-# A Level-PDF-splitter
+# PDF-splitter
 
-A Level-PDF-splitter is a parsing library designed to split Past Papers according to their question numbers.
+PDF-splitter is a parsing library built for extracting questions from Exam Papers. 
+It works on both questions papers and marking schemes.
+
+# Supported Exam Boards
+Cambridge Assessment International Examinations
+
+

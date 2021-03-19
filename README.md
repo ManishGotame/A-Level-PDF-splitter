@@ -132,8 +132,8 @@ Note: `prediction` is used to store machine learning predctions of topics which 
   <img src="https://github.com/ManishGotame/ALevel-PDF-splitter/blob/main/images/qimg3.PNG" alt="qimg3"/>
 </p>
 
-
-
+## License
+This project falls under the MIT License.
 
 
 

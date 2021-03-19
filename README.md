@@ -1,6 +1,6 @@
 # PDF-splitter
 <p align="center">
-  <img src="https://github.com/ManishGotame/ALevel-PDF-splitter/blob/main/images/logo.PNG" alt="animation"/>
+  <img src="https://github.com/ManishGotame/ALevel-PDF-splitter/blob/main/images/anim-splitter.gif" alt="animation"/>
 </p>
 
 ### A parsing library built for extracting questions from Exam Papers. 

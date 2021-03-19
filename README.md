@@ -22,7 +22,7 @@ __To report a bug__ or request a feature, please [file an issue](https://github.
 ### Sample Questions Paper :
 
 <p align="center">
-  <img src="https://github.com/ManishGotame/ALevel-PDF-splitter/blob/main/images/qimg.PNG" alt="question paper"/>
+  <img src="https://github.com/ManishGotame/ALevel-PDF-splitter/blob/main/images/qimg.png" alt="question paper"/>
 </p>
 
 ```python

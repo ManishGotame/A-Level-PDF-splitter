@@ -100,7 +100,7 @@ Arguments:
 from pdfsplitter.qpaper import qparser
 from pdfsplitter.mscheme import mparser
 
-from pdfsplittter.utils.extractor import extract
+from pdfsplitter.utils.extractor import extract
 
 paperData, questionsText = qparser("9709_s10_qp_11.pdf").parse()
 paperData = qparser("9709_s10_ms_11.pdf", {}).parse()

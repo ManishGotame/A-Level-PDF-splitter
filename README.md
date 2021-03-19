@@ -114,6 +114,8 @@ print(paperDict)
 '2': {'questions': '9709_s10_qp_11-2', 'answers': '9709_s10_ms_11-2', 'prediction': ''}, 
 '3': {'questions': '9709_s10_qp_11-3', 'answers': '9709_s10_ms_11-3', 'prediction': ''}}
 ```
+Note: `prediction` is used to store machine learning predctions of topics which is not included in this repository.
+
 `Extract Questions as Images`:
 - need to clean up some code and speed it up
 
@@ -128,7 +130,6 @@ print(paperDict)
   <img src="https://github.com/ManishGotame/ALevel-PDF-splitter/blob/main/images/qimg3.PNG" alt="qimg3"/>
 </p>
 
-Note: `prediction` is used to store machine learning predctions of topics which is not included in this repository.
 
 
 

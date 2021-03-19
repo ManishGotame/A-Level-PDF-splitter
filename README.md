@@ -19,6 +19,12 @@ __To report a bug__ or request a feature, please [file an issue](https://github.
 
 # To split a question paper 
 
+### Sample Questions Paper :
+
+<p align="center">
+  <img src="https://github.com/ManishGotame/ALevel-PDF-splitter/blob/main/images/qimg.PNG" alt="question paper"/>
+</p>
+
 ```python
 from pdfsplitter.qpaper import qparser
 
@@ -108,6 +114,19 @@ print(paperDict)
 '2': {'questions': '9709_s10_qp_11-2', 'answers': '9709_s10_ms_11-2', 'prediction': ''}, 
 '3': {'questions': '9709_s10_qp_11-3', 'answers': '9709_s10_ms_11-3', 'prediction': ''}}
 ```
+`Extract Questions as Images`:
+- need to clean up some code and speed it up
+
+`Extracted Questions as PDFs` :
+<p align="center">
+  <img src="https://github.com/ManishGotame/ALevel-PDF-splitter/blob/main/images/qimg1.PNG" alt="qimg1"/>
+</p>
+<p align="center">
+  <img src="https://github.com/ManishGotame/ALevel-PDF-splitter/blob/main/images/qimg2.PNG" alt="qimg2"/>
+</p>
+<p align="center">
+  <img src="https://github.com/ManishGotame/ALevel-PDF-splitter/blob/main/images/qimg3.PNG" alt="qimg3"/>
+</p>
 
 Note: `prediction` is used to store machine learning predctions of topics which is not included in this repository.
 

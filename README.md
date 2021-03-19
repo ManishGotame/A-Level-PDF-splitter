@@ -14,6 +14,11 @@ __To report a bug__ or request a feature, please [file an issue](https://github.
 ## Supported Exam Boards
 - [Cambridge Assessment International Examinations](https://www.cambridgeinternational.org/)
 
+## Currently being used by :
+[Open Past Paper](https://www.openpastpaper.com/)
+<p align="center">
+  <img src="https://github.com/ManishGotame/ALevel-PDF-splitter/blob/main/images/opplogo.PNG" alt="Open Past Paper"/>
+</p>
 
 ## Examples
 
